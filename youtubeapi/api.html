@@ -45,6 +45,22 @@
             font-size: 30px;
 
         }
+        .flex {
+            display: flex;
+            justify-content: space-around;
+        }
+        .flex > button {
+            font-size: 20px;
+            width: 300px;
+            color: white;
+            background-color: black;
+        }
+        .gap {
+            gap : 2rem;
+        }
+        .mt-2{
+            margin-top: 0.5rem;
+        }
 
     </style>
 </head>
@@ -56,9 +72,13 @@
         <div id="search-box"><input placeholder="search" type="text" id="input"/>
         <button id="btn">Search</button>
         </div>
+    
+
+</div>
+<div class="flex gap mt-2" id="pagination">
+    <button name="prev">prev</button>
+    <button name="next">next</button>
     </div>
-    
-    
     <div id="results"></div>
 
     <script type="text/javascript"  src="utube.js"></script>
